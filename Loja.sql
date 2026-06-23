@@ -1,0 +1,42 @@
+-- Comentario
+
+SELECT *
+FROM PEDIDOS;
+
+SELECT 
+	ID_Cliente 'ID Cliente', 
+	Nome, 
+    Data_Nascimento, 
+    Email
+FROM CLIENTES;
+
+SELECT *
+FROM PRODUTOS
+LIMIT 5;
+
+SELECT *
+FROM PRODUTOS
+ORDER BY PRECO_UNIT;
+
+SELECT *
+FROM PRODUTOS
+WHERE PRECO_UNIT >= 1800;
+
+SELECT *
+FROM PRODUTOS
+WHERE MARCA_PRODUTO = 'DELL';
+
+SELECT *
+FROM PEDIDOS
+WHERE DATA_VENDA = '2019-01-03';
+
+SELECT *
+FROM CLIENTES
+WHERE Estado_Civil = 'S' AND Sexo = 'M';
+
+-- Funções de Agregação
+
+/* COUNT | DISTINCT | SUM | AVG | MIN/MAX */
+
+SELECT COUNT(Nome)
+FROM Clientes;
